@@ -23,34 +23,9 @@ pitch_no SMALLINT,
 at_bat_no SMALLINT,
 pitch_of_at_bat SMALLINT,
 inning SMALLINT,
-top_inning BINARY,
+top_inning SMALLINT,
 pitcher_id INT,
 batter_id INT,
 FOREIGN KEY(pitcher_id) REFERENCES player_lookup(player_id),
 FOREIGN KEY(batter_id) REFERENCES player_lookup(player_id),
 velo FLOAT(4));
-
-SELECT *
-FROM player_lookup
-INTO  OUTFILE 'tables/player_lookup.csv' 
-FIELDS ENCLOSED BY '"' 
-TERMINATED BY ';' 
-ESCAPED BY '"' 
-LINES TERMINATED BY '\r\n';
-
-SELECT *
-FROM pitches
-INTO  OUTFILE 'tables/pitches.csv' 
-FIELDS ENCLOSED BY '"' 
-TERMINATED BY ';' 
-ESCAPED BY '"' 
-LINES TERMINATED BY '\r\n';
-
-
-SELECT *
-FROM pitches
-INTO  OUTFILE 'tables/game_lookup.csv' 
-FIELDS ENCLOSED BY '"' 
-TERMINATED BY ';' 
-ESCAPED BY '"' 
-LINES TERMINATED BY '\r\n';
