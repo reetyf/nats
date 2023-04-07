@@ -87,7 +87,7 @@ def pitcher_matrix(pitcher_summary,game_lookup,player_lookup, pitches,team_id,en
     
     # create sum columns
     return_df['Last 3 Days'] =return_df.iloc[:,[-1,-2,-3]].sum(axis = 1)
-    return_df['Last 7 Days'] = return_df.sum(axis = 1)
+    return_df['Last 7 Days'] = return_df.iloc[:, :-1].sum(axis=1)
     
     
     
