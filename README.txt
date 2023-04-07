@@ -1,7 +1,7 @@
 This submission is in response to the Washington Nationals R&D questionnaire for the winter of 2023.
 
 Firstly, the answers to the long-form questions 1-4 are located in the corresponding Jupyter Notebook. The logic for data creation, as well as the actual .csv generation is in the 'Q5' notebook.
-Though, the .csv files I used to do the sample matrices are included in the submission, if the reviewer would like to rerun for part d) with a variety of teams.
+Though, the .csv files I used to do the sample matrices are included in the submission email (too large to host elsewhere), if the reviewer would like to rerun for part d) with a variety of teams.
 
 The workflow is in this order and can be mirrored on the reviewer's machine by following this methodology:
 1. mySQL script creates the table skeletons
